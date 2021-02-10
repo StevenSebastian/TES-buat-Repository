@@ -1,0 +1,234 @@
+<html>
+    <head>
+
+    </head>
+
+    <body background="wp2757834.gif">
+        <form name="LOGIN AKUN"     method="POST" action="home2.html"></form>
+        <table border="5" align="center"  width ="1000"  height ="50" cellpadding="30" celllspacing="20">
+            
+            <tr>
+                <td colspan="2">
+                    <marquee behavior= alternate>SILAHKAN LOGIN</marquee>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Nama Lengkap
+                </td>
+
+                <td>
+                    <input type="text" size="50" maxlength="100">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Password
+                </td>
+                    
+                <td>
+                    <input type="password" size="50" maxlength="100">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Jenis Kelamin
+                </td>
+
+                <td>
+                    <input type="radio" name="GENDER" value="Pria">Laki-Laki
+                    <input type="radio" name="GENDER" value="Wanita">Perempuan
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Hobby
+                </td>
+
+                <td>
+                    <input type="CheckBox" name="HOBBY1" Value="Olahraga" >         Olahraga
+                    <br>
+                    <input type="CheckBox" name="HOBBY2" Value="Nonton" >           Menonton
+                    <br>
+                    <input type="CheckBox" name="HOBBY3" Value="Gambar" >           Menggambar
+                    <br>
+                    <input type="CheckBox" name="HOBBY4" Value="Desain" >           Mendesain
+                    <br>
+                    <input type="CheckBox" name="HOBBY5" Value="OR Indoor" >        Olahraga Indoor                    
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Agama
+                </td>
+                    
+                <td>
+                    <select size="1" name="AGAMA">
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Budha">Budha</option>
+                        <option value="Keyakinan">Keyakinan</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Daerah Tempat Tinggal
+                </td>
+
+                <td>                    
+                    <select size="1" name="PROVINSI">
+                        <option value="1">Jakarta Barat</option>
+                        <option value="2">Jakarta Timur</option>
+                        <option value="3">Jakarta Utara</option>
+                        <option value="4">Jakarta Selatan</option>
+                        <option value="5">Jakarta Pusat</option>
+                    </select>
+                </td>
+            </tr>
+                <td>
+                    Alamat Lengkap
+                </td>
+
+                <td>
+                    <textarea name="ALAMAT" rows="5" cols="75" maxlength="500"></textarea>
+                </td>
+            <tr>
+                <td>
+                    Komentar
+                </td>
+                    
+                <td>
+                    <textarea name="KOMENTAR" rows="5" cols="75" maxlength="500"></textarea>
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="OK">
+                    <input type="reset" value="CANCEL">
+                </td>                
+            </tr>
+        </table>
+        </form>
+         Copyright By @Steven_Sebastian96
+         <font face="Lucida Console"color="black" bgolor="black">
+            <!-- Menampilkan Jam (Aktif) -->
+        
+            <div id="clock"></div>
+        
+                <script type="text/javascript">
+        
+                <!--
+        
+                function showTime() {
+        
+                    var a_p = "";
+        
+                    var today = new Date();
+        
+                    var curr_hour = today.getHours();
+        
+                    var curr_minute = today.getMinutes();
+        
+                    var curr_second = today.getSeconds();
+        
+                    if (curr_hour < 12) {
+        
+                        a_p = "AM";
+        
+                    } else {
+        
+                        a_p = "PM";
+        
+                    }
+        
+                    if (curr_hour == 0) {
+        
+                        curr_hour = 12;
+        
+                    }
+        
+                    if (curr_hour > 12) {
+        
+                        curr_hour = curr_hour - 12;
+        
+                    }
+        
+                    curr_hour = checkTime(curr_hour);
+        
+                    curr_minute = checkTime(curr_minute);
+        
+                    curr_second = checkTime(curr_second);
+        
+                 document.getElementById('clock').innerHTML=curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+        
+                    }
+        
+         
+        
+                function checkTime(i) {
+        
+                    if (i < 10) {
+        
+                        i = "0" + i;
+        
+                    }
+        
+                    return i;
+        
+                }
+        
+                setInterval(showTime, 500);
+        
+                //--> 
+                
+                </script>
+        
+                <!-- Menampilkan Hari, Bulan dan Tahun -->
+        
+                <br>
+        
+                <script type='text/javascript'>
+        
+                    <!--
+        
+                    var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+        
+                    var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+        
+                    var date = new Date();
+        
+                    var day = date.getDate();
+        
+                    var month = date.getMonth();
+        
+                    var thisDay = date.getDay(),
+        
+                        thisDay = myDays[thisDay];
+        
+                    var yy = date.getYear();
+        
+                    var year = (yy < 1000) ? yy + 1900 : yy;
+        
+                    document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+        
+                    //-->
+        
+                </script>
+        <br>
+        <time>WIB/JakartaBarat/Indonesia</time>
+        </font>
+    </table>
+</body>
+    </body>
+</html>
